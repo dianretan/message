@@ -56,6 +56,7 @@ export default class LoginScreen extends Component {
             <Button
                 type={'primary'}
                 onClick={async()=>{
+                    console.log('xxx')
                     const reslut = await userManager.login(this.state.username,this.state.password);
                     console.log(reslut);
                     if(reslut.success === false){
